@@ -8,9 +8,7 @@ loadLanguages(["markup", "css", "javascript"]);
 
 /** Wrap pre tag */
 function wrapPre(code: string, lang: string) {
-  return `<pre class="language-${lang}"><code>${
-    lang === "text" ? escapeHtml(code) : code
-  }</code></pre>`;
+  return `<pre class="language-${lang}"><code>${lang === "text" ? escapeHtml(code) : code}</code></pre>`;
 }
 
 const EXTENSION_MAPPINGS: Record<string, string> = {

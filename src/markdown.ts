@@ -28,10 +28,7 @@ class TagContent {
   }
 
   public toTag() {
-    return `${
-      this.startTag ||
-      `<${this.tagName}${this.defaultAttrs ? ` ${this.defaultAttrs}` : ""}>`
-    }
+    return `${this.startTag || `<${this.tagName}${this.defaultAttrs ? ` ${this.defaultAttrs}` : ""}>`}
 ${this.contents.join("\n")}
 </${this.tagName}>`;
   }
