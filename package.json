@@ -1,6 +1,6 @@
 {
 	"name": "@energypatrikhu/vite-plugin-svelte-md",
-	"version": "0.1.9",
+	"version": "0.1.10",
 	"description": "Vite plugin to convert markdown to svelte template",
 	"files": [
 		"lib"
